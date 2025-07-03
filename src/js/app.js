@@ -20,7 +20,7 @@ export default class App {
 
     <section class="features">
       <div class="container">
-        <h2>Apa yang Disediakan?</h2>
+        <h2>Apa yang sudah Disediakan?</h2>
         <ul>
           <li>✅ Webpack 5 + Babel</li>
           <li>⚙️ Mode Development & Production</li>
