@@ -1,101 +1,93 @@
-🚀 **Webpack Starter**
-Sebuah starter Webpack sederhana yang siap pakai untuk proyek JavaScript/HTML/CSS modern Anda. Cepat, ringan, dan mudah dikustomisasi!
+# 🚀 Webpack Starter
 
-✨ Fitur Utama
-Webpack 5 Terbaru: Menggunakan konfigurasi Webpack versi terbaru untuk performa dan fitur terbaik.
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Webpack](https://img.shields.io/badge/webpack-5.x-brightgreen)
+![Status](https://img.shields.io/badge/status-ready_to_use-green)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
-Mode Pengembangan & Produksi:
+Sebuah template starter Webpack modern yang siap pakai untuk memulai proyek **JavaScript**, **HTML**, dan **CSS**. Dirancang agar ringan, cepat, dan mudah untuk disesuaikan.
 
-Pengembangan: Hot Module Replacement (HMR) untuk live-reloading instan.
+---
 
-Produksi: Optimalisasi kode (minifikasi, tree-shaking) untuk bundle yang lebih kecil.
+## 📦 Apa yang Sudah Disediakan?
 
-Dukungan JavaScript Modern: Kompatibel dengan ES6+ melalui Babel.
+- ✅ Webpack 5
+- ✅ Mode Development & Production
+- ✅ Babel (untuk ES6+)
+- ✅ Hot Module Replacement (HMR)
+- ✅ CSS Loader & Style Loader
+- ✅ HTML Webpack Plugin (otomatis generate `index.html`)
+- ✅ Asset loader (gambar, font, dll)
+- ✅ CleanWebpackPlugin (membersihkan `dist/` sebelum build)
 
-Dukungan CSS: Pengelolaan CSS dengan loader yang relevan (misalnya, style-loader, css-loader).
+---
 
-HTML Dinamis: Otomatis menghasilkan index.html dengan bundle JS/CSS yang benar.
+## 🚀 Cara Memulai
 
-Asset Management: Penanganan gambar, font, dan aset lainnya dengan mudah.
+### 1. Clone Repositori
 
-Clean Build: Membersihkan direktori build secara otomatis sebelum setiap build baru.
-
-🛠️ Instalasi
-Untuk memulai proyek ini, pastikan Anda sudah menginstal Node.js dan npm (atau Yarn) di sistem Anda.
-
-Clone repositori ini:
-
-Bash
-
-git clone https://github.com/USERNAME_ANDA/webpack-starter.git
+```bash
+git clone https://github.com/RenzWay/webpack-starter.git
 cd webpack-starter
-(Ganti USERNAME_ANDA dengan nama pengguna GitHub Anda.)
+```
 
-Instal dependensi:
+### 2. Install Dependensi
 
-Bash
-
+```bash
 npm install
-
 # atau
-
 yarn install
-🚀 Cara Menggunakan
-Mode Pengembangan (Development)
-Untuk menjalankan server pengembangan dengan live-reloading dan HMR:
+```
 
-Bash
+## 💻Mode Development
 
-npm run start
+Jalankan server dengan server development
 
+```bash
+npm run dev
 # atau
+yarn dev
+```
 
-yarn start
-Aplikasi akan tersedia di http://localhost:8080 (atau port lain yang dikonfigurasi). Perubahan pada kode sumber Anda akan otomatis dimuat ulang di browser.
+## 📦 Mode Produksi
 
-Mode Produksi (Production)
-Untuk membuat bundle yang dioptimalkan untuk produksi (siap deploy):
-
-Bash
-
+```bash
 npm run build
-
 # atau
-
 yarn build
-Hasil bundle akan tersimpan di direktori dist/ (atau direktori output yang Anda konfigurasi).
 
-📂 Struktur Proyek
-webpack-starter/
-├── dist/ # Direktori output setelah proses build
-├── public/ # File statis yang akan disalin langsung (misal: index.html, favicon)
-├── src/ # Source code aplikasi Anda
-│ ├── index.js # Titik masuk utama aplikasi JavaScript Anda
-│ ├── style.css # Contoh file CSS
-│ └── assets/ # Folder untuk gambar, font, dll.
-├── .babelrc # Konfigurasi Babel (jika digunakan)
-├── .gitignore # File/folder yang diabaikan oleh Git
-├── package.json # Daftar dependensi dan script NPM
-├── README.md # File ini!
-└── webpack.config.js # Konfigurasi utama Webpack
-⚙️ Konfigurasi Webpack
-File konfigurasi Webpack utama ada di webpack.config.js. Anda bisa memodifikasinya untuk:
+```
 
-Mengubah entry point atau direktori output.
+## ⚙️ Kustomisasi
 
-Menambahkan loader untuk jenis file baru (misalnya, TypeScript, Sass, Vue, React).
+Ubah konfigurasi di `webpack.config.js` sesuai kebutuhan kamu:
 
-Menambahkan plugin untuk fungsionalitas tambahan (misalnya, optimisasi, variabel lingkungan).
+- Tambahkan loader baru (misal: SASS, TypeScript, React, dsb)
+- Tambahkan plugin tambahan (misal: dotenv, terser, dll)
+- Ganti direktori `src/`, `dist/`, atau `publicPath`
 
-🤝 Kontribusi
-Sumbangan Anda sangat dihargai! Jika Anda memiliki saran atau menemukan bug, silakan buka issue atau buat pull request.
+## 🧑‍💻 Siapa Project Ini Cocok Untuk?
 
-📜 Lisensi
-Proyek ini dilisensikan di bawah [Nama Lisensi Anda] - lihat file LICENSE.md untuk detailnya.
+Proyek ini cocok untuk:
 
-📧 Kontak
-Jika ada pertanyaan, jangan ragu untuk menghubungi:
+- Developer yang ingin mulai proyek JavaScript dari awal
+- Belajar setup Webpack secara praktis
+- Membuat boilerplate frontend yang fleksibel
 
-[Nama Anda] - [Email Anda]
+---
 
-[Profil GitHub Anda (opsional)]
+## 📜 Lisensi
+
+Lisensi: **MIT**  
+Bebas digunakan dan dimodifikasi. Lihat file `LICENSE` untuk detail.
+
+## 🙋 Kontak
+
+**zenrenz**  
+🔗 GitHub: [https://github.com/RenzWay]
+
+## ⭐️ Jangan Lupa
+
+Kalau repo ini bermanfaat, jangan lupa kasih ⭐️ di GitHub ya!
+
+---
