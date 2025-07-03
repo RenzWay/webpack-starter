@@ -1,51 +1,131 @@
-body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: #f7f7f7;
+/* Reset dan global */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.starter-container {
-  background: #fff;
-  margin: 60px auto 0 auto;
-  padding: 2rem 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
-  max-width: 500px;
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container > div {
+  gap: 1rem;
+}
+
+/* Header / Hero */
+.hero {
+  background: linear-gradient(135deg, #1976d2, #64b5f6);
+  color: white;
   text-align: center;
+  padding: 4rem 2rem;
 }
 
-.starter-container h1 {
-  color: #2d72d9;
-  margin-bottom: 0.5em;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
-.starter-container code {
-  background: #f0f0f0;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 1em;
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
 }
 
-.github-link {
+.btn-primary {
   display: inline-block;
-  color: #fff;
-  background: #24292f;
-  padding: 0.5em 1.2em;
-  border-radius: 6px;
-  text-decoration: none;
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.4rem;
+  background-color: white;
+  color: #1976d2;
   font-weight: bold;
-  margin-top: 1.5em;
-  transition: background 0.2s;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
 }
 
-.github-link:hover {
-  background: #444c56;
+.btn-primary:hover {
+  background-color: #eeeeee;
 }
 
-@media (max-width: 600px) {
-  .starter-container {
-    padding: 1rem 0.5rem;
-    max-width: 98vw;
-  }
+/* Features */
+.features {
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.features ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.features li {
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+/* Usage section */
+.usage {
+  background-color: #e3f2fd;
+  padding: 3rem 2rem;
+}
+
+.usage h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.steps .step {
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-left: 4px solid #1976d2;
+  border-radius: 4px;
+}
+
+code {
+  background-color: #f0f0f0;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #888;
+  background-color: #fafafa;
+}
+
+footer a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
 }

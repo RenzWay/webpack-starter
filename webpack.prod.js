@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const htmlPlugin = require("html-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = merge(common, {
   mode: "production",
@@ -30,6 +31,9 @@ module.exports = merge(common, {
     new htmlPlugin({
       template: "./index.html", // gunakan file HTML sebagai template
       filename: "index.html", // nama file output di folder dist
+    }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: "./public", to: "public" }],
     }),
   ],
   output: {

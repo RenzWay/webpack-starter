@@ -5,18 +5,54 @@ export default class App {
 
   render() {
     return `
-    <section class="starter-container">
-      <h1>Webpack Starter Project</h1>
-      <p>Starter project untuk <b>Webpack</b> yang siap digunakan. Cocok untuk belajar, eksperimen, atau memulai proyek baru dengan setup modern.</p>
-      <h3>Cara Pakai</h3>
-      <ol>
-        <li>Clone repository ini dari GitHub</li>
-        <li>Install dependencies: <code>npm install</code></li>
-        <li>Jalankan development server: <code>npm run start</code></li>
-        <li>Edit kode di <code>src/js/</code> dan lihat hasilnya secara live!</li>
-      </ol>
-      <a class="github-link" href="https://github.com/username/webpack-starter" target="_blank">Lihat di GitHub</a>
-      <p style="margin-top:1.5em;color:#888;font-size:0.95em;">Cukup fork atau clone, lalu langsung pakai!</p>
+    <header class="hero">
+      <div class="container">
+        <div class="flex justify-center">
+            <img width="10%" src="./public/webpack.svg" alt="" type="image/svg+xml">
+            <h1>Webpack Starter</h1>
+        </div>
+        <p>Template Webpack modern & minimalis untuk mulai ngoding tanpa ribet konfigurasi.</p>
+        <a href="https://github.com/RenzWay/webpack-starter" target="_blank" class="btn-primary">
+          🔗 Kunjungi GitHub
+        </a>
+      </div>
+    </header>
+
+    <section class="features">
+      <div class="container">
+        <h2>Apa yang Disediakan?</h2>
+        <ul>
+          <li>✅ Webpack 5 + Babel</li>
+          <li>⚙️ Mode Development & Production</li>
+          <li>🔥 Hot Module Replacement (HMR)</li>
+          <li>🎨 Dukungan CSS dan asset loader</li>
+          <li>🧹 CleanWebpackPlugin</li>
+          <li>📄 HTML otomatis via HtmlWebpackPlugin</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="usage">
+      <div class="container">
+        <h2>Cara Pakai</h2>
+        <div class="steps">
+          <div class="step">
+            <strong>1.</strong> Clone repo:
+            <code>git clone https://github.com/RenzWay/webpack-starter.git</code>
+          </div>
+          <div class="step">
+            <strong>2.</strong> Install:
+            <code>npm install</code>
+          </div>
+          <div class="step">
+            <strong>3.</strong> Mulai dev server:
+            <code>npm run dev</code>
+          </div>
+          <div class="step">
+            <strong>4.</strong> Edit kode di <code>src/</code> & lihat hasilnya!
+          </div>
+        </div>
+      </div>
     </section>
     `;
   }
