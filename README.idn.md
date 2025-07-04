@@ -60,7 +60,7 @@ yarn build
 
 ## ⚙️ Kustomisasi
 
-Ubah konfigurasi di `webpack.config.js` sesuai kebutuhan kamu:
+Ubah konfigurasi di `webpack.common.js` sesuai kebutuhan kamu:
 
 - Tambahkan loader baru (misal: SASS, TypeScript, React, dsb)
 - Tambahkan plugin tambahan (misal: dotenv, terser, dll)

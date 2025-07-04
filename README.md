@@ -60,7 +60,7 @@ yarn build
 
 ## ⚙️ Customization
 
-Modify the configuration in `webpack.config.js` as needed:
+Modify the configuration in `webpack.common.js` as needed:
 
 - Add new loaders (e.g., SASS, TypeScript, React, etc.)
 - Add additional plugins (e.g., dotenv, terser, etc.)
