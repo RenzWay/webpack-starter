@@ -88,6 +88,8 @@ Free to use and modify. See the `LICENSE` file for details.
 
 ## ⭐️ Don't Forget
 
+**This is not an official Webpack project. Made by community for learning purposes.**
+
 If you find this repo useful, don't forget to give it a ⭐️ on GitHub!
 
 ---
