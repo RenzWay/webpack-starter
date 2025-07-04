@@ -171,3 +171,10 @@ footer a:hover {
     padding: 0.3em 1em 0.3em 0.6em;
   }
 }
+
+.disclaimer {
+  margin-top: 0.7em;
+  font-size: 0.95em;
+  color: #bdbdbd;
+  font-style: italic;
+}

@@ -50,8 +50,9 @@ export default class App {
       </div>
     </section>
 
-    <footer style="text-align:center; margin:2rem 0; color:#888;">
-      <small>${t.disclaimer}</small>
+    <footer>
+      <p>© 2025 Webpack Starter by: <a href="https://github.com/RenzWay" target="_blank">RenzWay</a></p>
+      <p class="disclaimer">${t.disclaimer}</p>
     </footer>
   `;
   }
