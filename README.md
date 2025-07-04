@@ -1,93 +1,93 @@
-# 🚀 Webpack Starter
+# <img src="./public/webpack.svg" width="10%" alt="logo"  /> Webpack Starter
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Webpack](https://img.shields.io/badge/webpack-5.x-brightgreen)
 ![Status](https://img.shields.io/badge/status-ready_to_use-green)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
-Sebuah template starter Webpack modern yang siap pakai untuk memulai proyek **JavaScript**, **HTML**, dan **CSS**. Dirancang agar ringan, cepat, dan mudah untuk disesuaikan.
+A modern, ready-to-use Webpack starter template for kickstarting **JavaScript**, **HTML**, and **CSS** projects. Designed to be lightweight, fast, and easy to customize.
 
 ---
 
-## 📦 Apa yang Sudah Disediakan?
+## 📦 What's Included?
 
 - ✅ Webpack 5
-- ✅ Mode Development & Production
-- ✅ Babel (untuk ES6+)
+- ✅ Development & Production Modes
+- ✅ Babel (for ES6+)
 - ✅ Hot Module Replacement (HMR)
 - ✅ CSS Loader & Style Loader
-- ✅ HTML Webpack Plugin (otomatis generate `index.html`)
-- ✅ Asset loader (gambar, font, dll)
-- ✅ CleanWebpackPlugin (membersihkan `dist/` sebelum build)
+- ✅ HTML Webpack Plugin (auto-generates `index.html`)
+- ✅ Asset loader (images, fonts, etc.)
+- ✅ CleanWebpackPlugin (cleans `dist/` before build)
 
 ---
 
-## 🚀 Cara Memulai
+## 🚀 Getting Started
 
-### 1. Clone Repositori
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/RenzWay/webpack-starter.git
 cd webpack-starter
 ```
 
-### 2. Install Dependensi
+### 2. Install Dependencies
 
 ```bash
 npm install
-# atau
+# or
 yarn install
 ```
 
-## 💻Mode Development
+## 💻 Development Mode
 
-Jalankan server dengan server development
+Run the development server
 
 ```bash
 npm run dev
-# atau
+# or
 yarn dev
 ```
 
-## 📦 Mode Produksi
+## 📦 Production Mode
 
 ```bash
 npm run build
-# atau
+# or
 yarn build
 
 ```
 
-## ⚙️ Kustomisasi
+## ⚙️ Customization
 
-Ubah konfigurasi di `webpack.config.js` sesuai kebutuhan kamu:
+Modify the configuration in `webpack.config.js` as needed:
 
-- Tambahkan loader baru (misal: SASS, TypeScript, React, dsb)
-- Tambahkan plugin tambahan (misal: dotenv, terser, dll)
-- Ganti direktori `src/`, `dist/`, atau `publicPath`
+- Add new loaders (e.g., SASS, TypeScript, React, etc.)
+- Add additional plugins (e.g., dotenv, terser, etc.)
+- Change the `src/`, `dist/` directories, or `publicPath`
 
-## 🧑‍💻 Siapa Project Ini Cocok Untuk?
+## 🧑‍💻 Who Is This Project For?
 
-Proyek ini cocok untuk:
+This project is suitable for:
 
-- Developer yang ingin mulai proyek JavaScript dari awal
-- Belajar setup Webpack secara praktis
-- Membuat boilerplate frontend yang fleksibel
+- Developers who want to start a JavaScript project from scratch
+- Learning practical Webpack setup
+- Creating a flexible frontend boilerplate
 
 ---
 
-## 📜 Lisensi
+## 📜 License
 
-Lisensi: **MIT**  
-Bebas digunakan dan dimodifikasi. Lihat file `LICENSE` untuk detail.
+License: **MIT**  
+Free to use and modify. See the `LICENSE` file for details.
 
-## 🙋 Kontak
+## 🙋 Contact
 
 **zenrenz**  
 🔗 GitHub: [https://github.com/RenzWay]
 
-## ⭐️ Jangan Lupa
+## ⭐️ Don't Forget
 
-Kalau repo ini bermanfaat, jangan lupa kasih ⭐️ di GitHub ya!
+If you find this repo useful, don't forget to give it a ⭐️ on GitHub!
 
 ---

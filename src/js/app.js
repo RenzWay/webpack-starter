@@ -1,66 +1,123 @@
 export default class App {
   constructor({ content }) {
     this.content = content;
+    this.lang = sessionStorage.getItem("lang") || "en";
   }
 
   render() {
+    const t = this.getTexts();
     return `
     <header class="hero">
       <div class="container">
-        <div class="flex justify-center">
-            <img width="10%" src="./public/webpack.svg" alt="" type="image/svg+xml">
-            <h1>Webpack Starter</h1>
+        <div class="lang-switcher">
+          <select id="lang-select">
+            <option value="id"${
+              this.lang === "id" ? " selected" : ""
+            }>🇮🇩 ID</option>
+            <option value="en"${
+              this.lang === "en" ? " selected" : ""
+            }>🇬🇧 EN</option>
+          </select>
         </div>
-        <p>Template Webpack modern & minimalis untuk mulai ngoding tanpa ribet konfigurasi.</p>
+        <div class="flex justify-center">
+            <img width="10%" src="webpack.svg" alt="Webpack logo">
+            <h1>${t.title}</h1>
+        </div>
+        <p>${t.subtitle}</p>
         <a href="https://github.com/RenzWay/webpack-starter" target="_blank" class="btn-primary">
-          🔗 Kunjungi GitHub
+          ${t.visitGitHub}
         </a>
       </div>
     </header>
 
     <section class="features">
       <div class="container">
-        <h2>Apa yang sudah Disediakan?</h2>
+        <h2>${t.provided}</h2>
         <ul>
-          <li>✅ Webpack 5 + Babel</li>
-          <li>⚙️ Mode Development & Production</li>
-          <li>🔥 Hot Module Replacement (HMR)</li>
-          <li>🎨 Dukungan CSS dan asset loader</li>
-          <li>🧹 CleanWebpackPlugin</li>
-          <li>📄 HTML otomatis via HtmlWebpackPlugin</li>
+          ${t.features.map((item) => `<li>${item}</li>`).join("")}
         </ul>
       </div>
     </section>
 
     <section class="usage">
       <div class="container">
-        <h2>Cara Pakai</h2>
+        <h2>${t.usageTitle}</h2>
         <div class="steps">
-          <div class="step">
-            <strong>1.</strong> Clone repo:
-            <code>git clone https://github.com/RenzWay/webpack-starter.git</code>
-          </div>
-          <div class="step">
-            <strong>2.</strong> Install:
-            <code>npm install</code>
-          </div>
-          <div class="step">
-            <strong>3.</strong> Mulai dev server:
-            <code>npm run dev</code>
-          </div>
-          <div class="step">
-            <strong>4.</strong> Edit kode di <code>src/</code> & lihat hasilnya!
-          </div>
+          ${t.steps
+            .map((step) => `<div class="step"><code>${step}</code></div>`)
+            .join("")}
         </div>
       </div>
     </section>
-    `;
+  `;
+  }
+
+  getTexts() {
+    const TEXTS = {
+      id: {
+        title: "Webpack Starter",
+        subtitle:
+          "Template Webpack modern & minimalis untuk mulai ngoding tanpa ribet konfigurasi.",
+        visitGitHub: "🔗 Kunjungi GitHub",
+        provided: "Apa yang sudah Disediakan?",
+        features: [
+          "✅ Webpack 5 + Babel",
+          "⚙️ Mode Development & Production",
+          "🔥 Hot Module Replacement (HMR)",
+          "🎨 Dukungan CSS dan asset loader",
+          "🧹 CleanWebpackPlugin",
+          "📄 HTML otomatis via HtmlWebpackPlugin",
+        ],
+        usageTitle: "Cara Pakai",
+        steps: [
+          "1. Clone repo: git clone https://github.com/RenzWay/webpack-starter.git",
+          "2. Install: npm install",
+          "3. Mulai dev server: npm run dev",
+          "4. Edit kode di src/ & lihat hasilnya!",
+        ],
+      },
+      en: {
+        title: "Webpack Starter",
+        subtitle:
+          "A modern & minimal Webpack template to start coding without configuration hassle.",
+        visitGitHub: "🔗 Visit GitHub",
+        provided: "What's Included?",
+        features: [
+          "✅ Webpack 5 + Babel",
+          "⚙️ Development & Production Modes",
+          "🔥 Hot Module Replacement (HMR)",
+          "🎨 CSS & asset loader support",
+          "🧹 CleanWebpackPlugin",
+          "📄 Auto HTML via HtmlWebpackPlugin",
+        ],
+        usageTitle: "How to Use",
+        steps: [
+          "1. Clone the repo: git clone https://github.com/RenzWay/webpack-starter.git",
+          "2. Install: npm install",
+          "3. Start dev server: npm run dev",
+          "4. Edit code in src/ & see it live!",
+        ],
+      },
+    };
+
+    return TEXTS[this.lang];
   }
 
   async renderPage() {
     const app = this.render();
     const content = this.content;
-
     content.innerHTML = app;
+
+    const langSelect = document.getElementById("lang-select");
+    if (langSelect) {
+      langSelect.addEventListener("change", (e) => {
+        const selectedLang = e.target.value;
+        if (this.lang !== selectedLang) {
+          this.lang = selectedLang;
+          sessionStorage.setItem("lang", selectedLang);
+          this.renderPage();
+        }
+      });
+    }
   }
 }
