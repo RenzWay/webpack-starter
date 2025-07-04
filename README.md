@@ -1,4 +1,4 @@
-# <img src="./public/webpack.svg" width="10%" alt="logo"  /> Webpack Starter
+# <img src="./public/webpack.svg" width="5%" alt="logo"  /> Webpack Starter
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Webpack](https://img.shields.io/badge/webpack-5.x-brightgreen)
