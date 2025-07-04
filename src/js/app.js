@@ -49,6 +49,10 @@ export default class App {
         </div>
       </div>
     </section>
+
+    <footer style="text-align:center; margin:2rem 0; color:#888;">
+      <small>${t.disclaimer}</small>
+    </footer>
   `;
   }
 
@@ -75,6 +79,8 @@ export default class App {
           "3. Mulai dev server: npm run dev",
           "4. Edit kode di src/ & lihat hasilnya!",
         ],
+        disclaimer:
+          "Ini bukan proyek resmi Webpack. Dibuat oleh komunitas untuk tujuan pembelajaran.",
       },
       en: {
         title: "Webpack Starter",
@@ -97,6 +103,8 @@ export default class App {
           "3. Start dev server: npm run dev",
           "4. Edit code in src/ & see it live!",
         ],
+        disclaimer:
+          "This is not an official Webpack project. Made by community for learning purposes.",
       },
     };
 
