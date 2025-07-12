@@ -1,5 +1,6 @@
-import "../css/style.css";
-import App from "./app";
+import "../style/style.css";
+import "../style/base.scss";
+import App from "./app/app.js";
 
 document.addEventListener("DOMContentLoaded", async function () {
   const content = document.getElementById("content");

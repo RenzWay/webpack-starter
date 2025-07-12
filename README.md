@@ -15,10 +15,11 @@ A modern, ready-to-use Webpack starter template for kickstarting **JavaScript**,
 - ✅ Development & Production Modes
 - ✅ Babel (for ES6+)
 - ✅ Hot Module Replacement (HMR)
-- ✅ CSS Loader & Style Loader
+- ✅ CSS Loader, Style Loader, & Sass
 - ✅ HTML Webpack Plugin (auto-generates `index.html`)
 - ✅ Asset loader (images, fonts, etc.)
 - ✅ CleanWebpackPlugin (cleans `dist/` before build)
+- ✅ Routing SPA (Single Page Application)
 
 ---
 

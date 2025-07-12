@@ -1,3 +1,10 @@
+:root {
+  --blue-primary: #1c78c0;
+  --blue-light: #8ed6fb;
+  --grey-dark: #2b3a42;
+  --grey-light: #ececec;
+}
+
 /* Reset dan global */
 * {
   margin: 0;
@@ -10,6 +17,32 @@ body {
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
+}
+
+/* Router section */
+.routing-section {
+  background-color: var(--blue-light);
+  padding: 3rem 2rem;
+}
+
+.routing-section header > h1 {
+  font-size: 2rem;
+  margin-left: 15px;
+  margin-bottom: 1rem;
+  color: var(--grey-dark);
+}
+
+.routing-section ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.routing-section ul > li {
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-left: 4px solid var(--blue-primary);
+  border-radius: 4px;
 }
 
 /* Container */
@@ -60,7 +93,8 @@ body {
 
 /* Features */
 .features {
-  background-color: #ffffff;
+  background-color: #f4faff;
+  color: #1c78c0;
   padding: 3rem 2rem;
 }
 
