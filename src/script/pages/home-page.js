@@ -94,7 +94,7 @@ export default class HomePage {
             </select>
           </div>
           <div class="flex justify-center">
-              <img width="10%" src="webpack.svg" alt="Webpack logo">
+              <img width="10%" src="./public/webpack.svg" alt="Webpack logo">
               <h1>${t.title}</h1>
           </div>
           <p>${t.subtitle}</p>
